@@ -1,4 +1,4 @@
-package hackerRank;
+package hackerRankAlgoritms;
 
 public class CatsAndMouse2 {
     public static void main(String[] args) {

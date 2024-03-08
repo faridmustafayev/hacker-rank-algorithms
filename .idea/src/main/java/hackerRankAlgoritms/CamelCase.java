@@ -1,4 +1,4 @@
-package hackerRank;
+package hackerRankAlgoritms;
 
 public class CamelCase {
     public static void main(String[] args) {

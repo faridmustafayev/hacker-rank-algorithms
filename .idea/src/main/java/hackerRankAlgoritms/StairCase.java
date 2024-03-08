@@ -1,4 +1,4 @@
-package hackerRank;
+package hackerRankAlgoritms;
 
 public class StairCase {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package hackerRank;
+package hackerRankAlgoritms;
 
 public class SaveThePrisoner {
     public static void main(String[] args) {

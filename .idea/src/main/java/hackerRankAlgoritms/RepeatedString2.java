@@ -1,4 +1,4 @@
-package hackerRank;
+package hackerRankAlgoritms;
 
 public class RepeatedString2 {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package hackerRank;
+package hackerRankAlgoritms;
 
 public class NumberLineJumps {
     public static void main(String[] args) {
