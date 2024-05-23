@@ -4,7 +4,6 @@ public class XorStrings {
     public static void main(String[] args) {
 
         System.out.println(stringsXOR("10101", "00101"));
-
     }
 
     public static String stringsXOR(String s, String t) {
@@ -15,7 +14,7 @@ public class XorStrings {
 
             if (s.charAt(index) == t.charAt(index)) {
                 result += "0";
-            }else{
+            } else {
                 result += "1";
             }
         }

@@ -1,28 +1,44 @@
 package hackerrankAlgorithms;
 
-import java.util.Arrays;
+import java.util.Collections;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class MigratoryBirds {
     public static void main(String[] args) {
-
-        System.out.println(migratoryBirds(Arrays.asList(1, 4, 4, 4, 5, 3)));
-
+        System.out.println(migratoryBirds(List.of(1, 2, 3, 4, 5, 4, 3, 2, 1, 3, 4)));
     }
 
     public static int migratoryBirds(List<Integer> arr) {
+        int count = 0;
 
-        int counter = 1;
+        Map<Integer, Long> map = new HashMap<>();
 
-        for (int index = 0; index < arr.size(); index++) {
+        int minValue = Integer.MIN_VALUE;
 
-            if (arr.get(index) == counter) {
-                
+        for (Integer integer : arr) {
+            if (minValue < integer) {
+                minValue = integer;
             }
-
         }
 
-        return 0;
+        for (int i = 1; i <= minValue; i++) {
+            int finalI = i;
+            map.put(i, arr.stream()
+                    .filter(num -> num == finalI)
+                    .count());
+        }
+
+        long maxValue = Collections.max(map.values());
+
+        count = map.entrySet().stream()
+                .filter(entry -> entry.getValue() == maxValue)
+                .map(Map.Entry::getKey)
+                .findFirst()
+                .orElse(-1);
+
+        return count;
     }
 
 }
