@@ -11,7 +11,6 @@ public class XorStrings {
         String result = "";
 
         for (int index = 0; index < s.length(); index++) {
-
             if (s.charAt(index) == t.charAt(index)) {
                 result += "0";
             } else {
@@ -22,7 +21,5 @@ public class XorStrings {
         return result;
 
     }
-
-    protected final int wed = 3;
 
 }
